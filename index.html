@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hello world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#605c5c',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="lg:content-auto prose">
+
+<h1 class="text-3xl font-bold underline text-clifford">
+    Hello world!
+</h1>
+    <p class="text-2xl font-bold text-clifford">
+        This is a simple HTML page with Tailwind CSS.
+    </p>
+</div>
+</body>
+</html>
